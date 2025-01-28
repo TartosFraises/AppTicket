@@ -1,5 +1,7 @@
 
-Structure du projet
+# Structure du projet
+
+```plaintext
 
 AppTicket/
 │
@@ -44,7 +46,7 @@ AppTicket/
 │   ├── __init__.py
 │   ├── test_user.py  # Tests pour les utilisateurs
 │   ├── test_ticket.py  # Tests pour les tickets
-│   ├── test_routes.py  # Tests pour les routes API
+│   ├── test_routes.py  # Tests pour les routes APIg
 │   └── ...  # Autres fichiers de tests
 │
 ├── docs/  # Documentation du projet
@@ -65,3 +67,4 @@ AppTicket/
 ├── requirements.txt  # Dépendances Python
 ├── run.py  # Point d'entrée principal de l'application Flask
 └── README.md  # Documentation générale du projet
+```

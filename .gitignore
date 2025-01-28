@@ -1,0 +1,68 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+
+# Flask
+instance/
+*.log
+*.env
+.env
+
+# MySQL
+db/data/
+db/*.cnf
+
+# Docker
+docker/*.log
+docker/nginx/*.log
+*.pid
+*.sock
+
+# JetBrains (PyCharm)
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs and temp files
+*.log
+*.swp
+*.swo
+*.tmp
+
+# Git
+.git/
+.gitignore
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Tests
+.coverage
+htmlcov/
+*.egg-info
+.tox/

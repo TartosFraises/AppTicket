@@ -188,6 +188,84 @@ gantt
  
 # 3 **Comparaisons des outils existants**
 
+## 3.1 **Critères de comparaison**
+
+Nous évaluerons les solutions selon plusieurs critères :
+
+- Facilité d’utilisation
+- Fonctionnalités principales
+- Personnalisation
+- Intégrations
+- Tarification
+- Public cible
+
+## 3.2 **Comparatif des solutions populaires**
+
+| Outil	| Facilité d’utilisation (1 à 5) | Fonctionnalités principales | Personnalisation | Intégrations | Tarification | Public cible |
+|-------|------------------------|-----------------------------|------------------|--------------|--------------|--------------|
+|Jira Service Management|	4	|Gestion avancée des tickets, workflows ITIL, SLA, reporting puissant|	Élevée (workflows, automatisation)	|Jira, Confluence, Slack, API REST	| abonnement mensuel	|Grandes entreprises, ITSM|
+|Zendesk Support	|4|	Support multi-canal (email, chat, téléphone), IA, base de connaissances|	Moyenne	|Slack, CRM, API REST	| payant selon les plans|	PME et grandes entreprises|
+|Freshservice	|4	|ITIL-ready, gestion d’actifs, automatisation, self-service|	Moyenne|	Microsoft Teams, Slack, Zapier	|abonnement	|IT et support interne|
+|GLPI	|3	|Gestion des tickets et parc informatique, open-source	|Élevée|	Plugins et API	| open-source	|PME, collectivités|
+|OTRS	|3	|Gestion ITSM, flux de travail personnalisables	|Élevée|	API REST, CRM, intégrations multiples	| open-source |IT, service client|
+|Mantis Bug Tracker	|3	|Simple, gestion des tickets et bugs, notifications	|Faible|	Email, API	| open-source | Développeurs, équipes tech|
+|Spiceworks Help Desk	|3	|Interface intuitive, gestion des tickets et rapports	|Faible	| Microsoft 365, Slack	| publicité |PME et IT interne|
+|ServiceNow ITSM	|5	|ITSM complet, IA, automatisation avancée	|Très élevée|	Microsoft, AWS, API REST	| très cher |	Grandes entreprises, ITIL
+
+
+## 3.3 **Détails des outils les plus populaires**
+
+### 3.3.1 Jira Service Management
+Avantages :
+- Puissant pour les grandes équipes IT (ITIL, SLA).
+- Intégration native avec l’écosystème Atlassian.
+- Automatisations avancées.
+Inconvénients :
+- Courbe d’apprentissage.
+- Payant.
+### 3.3.2 Zendesk Support
+Avantages :
+- Interface moderne et intuitive.
+- Support multi-canal performant (email, chat, téléphone).
+- Fonctionnalités IA pour automatiser les réponses.
+Inconvénients :
+- Coût élevé pour les entreprises en croissance.
+- Personnalisation limitée comparée à Jira.
+### 3.3.3 Freshservice
+Avantages :
+- Spécialisé pour l’IT et la gestion des incidents.
+- Interface simple.
+- Gestion d’actifs intégrée.
+Inconvénients :
+- Moins d’intégrations natives que Zendesk/Jira.
+- Payant.
+### 3.3.4 GLPI (Open-source)
+Avantages :
+- Gratuit et open-source.
+- Gestion complète des tickets et du parc informatique.
+- Adapté aux PME et administrations.
+Inconvénients :
+- Interface vieillissante.
+- Configuration plus complexe qu’une solution cloud.
+### 3.3.5 OTRS
+Avantages :
+- Open-source, flexible et personnalisable.
+- Fonctionnalités ITSM avancées.
+- Idéal pour le support IT.
+Inconvénients :
+- Interface technique.
+- Maintenance et mise à jour à gérer soi-même.
+
+## 3.4 Recommandations selon l’usage
+
+| Besoin | Solution recommandée |
+|--------|----------------------|
+| Petite entreprise | Spiceworks (gratuit) ou Freshservice |
+| PME/PMI |	Jira Service Management ou ServiceNow |
+| Organisation publique |	GLPI ou OTRS |
+| Développeurs (suivi des bugs)	| Mantis Bug Tracker|
+
+
 # 4 **Définition des cas d’utilisation**
 
 # 5 **Exigences fonctionnelles et non fonctionnelles**

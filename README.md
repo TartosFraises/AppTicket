@@ -106,10 +106,18 @@ gantt
         Tests finaux avec les utilisateurs et corrections des derniers bugs:e6, after e5, 3d
         Rédaction de manuel utilisateur:e7, after e6, 5d
 ```
+# 2 **Questionnaire en ligne auprès des professionnels**
 
-# 2 **Résumé des Systèmes de Gestion des Incidents et des Demandes de Maintenance**
+[Quesitonnaire version PDF](docs/CollecteInformationsBTS-SIO.pdf)
+TODO: Ajouter ici le lien sur le questionnaire en ligne 
 
-## **2.1 Actuel : Signalement des incidents et outils utilisés**
+# 3 **Analyse des réponses et identification des fonctionnalités**
+
+## 3.1 Intruduction
+
+TODO:  Ajouter ici la présentation de l'analyse des résultats
+
+## **3.2 Actuel : Signalement des incidents et outils utilisés**
 - **Moyens de signalement** : GLPI, appels téléphoniques, tickets, JIRA, Teams.
 - **Outils/canaux en place** : GLPI, mails, Office 365 (Teams, Outlook), Slack, Zoom, Google Workspace.
 - **Problèmes majeurs** :
@@ -117,7 +125,7 @@ gantt
   - Logs incomplets, difficulté d'assigner un ticket à plusieurs personnes.
   - Multiplicité des systèmes pour les demandes hors ticketing.
 
-## **2.2 Volumes et Périodes**
+## **3.3 Volumes et Périodes**
 - **Incidents traités/semaine** :
   - 20% traitent 1 à 2 incidents.
   - 30% gèrent 5 à 10 incidents.
@@ -127,9 +135,8 @@ gantt
   - Les lundis matins et après-midi.
   - Après les mises à jour, en dehors des vacances scolaires.
 
----
 
-## **2.3 Attentes pour une nouvelle application**
+## **3.4 Attentes pour une nouvelle application**
 1. **Simplicité d’utilisation** (employés et techniciens).
 2. **Fonctionnalités clés** :
    - Suivi détaillé (nouveau, en cours, clos...).
@@ -144,9 +151,8 @@ gantt
    - Rapports hebdomadaires/mensuels.
 6. **Conformité** : Respect du RGPD et des normes internes.
 
----
 
-## **2.4 Préférences utilisateurs**
+## **3.5 Préférences utilisateurs**
 - **Signalement** : Formulaires en ligne, téléphone avec alertes directes.
 - **Suivi des tickets** :
   - Notifications par email/SMS.
@@ -155,9 +161,8 @@ gantt
 - **Première réponse** : Entre 1 et 2 jours.
 - **Matériel utilisé** : PC, tablettes, smartphones.
 
----
 
-## **2.5 Préférences techniciens**
+## **3.6 Préférences techniciens**
 - **Réception des tickets** : Mail (listes de diffusion), dashboard, bots Slack.
 - **Catégorisation** :
   - Type (matériel/logiciel), priorité, état actuel.
@@ -167,9 +172,8 @@ gantt
 - **Outils additionnels** :
   - Base de connaissances, chat utilisateur/technicien, liaison des tickets.
 
----
 
-## **2.6 Besoins responsables**
+## **3.7 Besoins responsables**
 - **Rapports souhaités** :
   - Tickets par service, temps moyen de résolution, problèmes récurrents.
   - Fréquence : hebdomadaire (lundi 10h) ou mensuelle.
@@ -178,17 +182,15 @@ gantt
   - Responsables : vision globale et rapports.
 - **Base de connaissances** : FAQ, guides, procédures.
 
----
-
-## **Autres besoins**
+## 3.8 **Autres besoins**
 - **Déploiement** : Préférences variées (cloud, serveur local).
 - **Sauvegardes** :
   - Sauvegarde quotidienne/hebdomadaire (tickets, logs, base de connaissances).
   - Continuité de service pendant les heures de travail.
  
-# 3 **Comparaisons des outils existants**
+# 4 **Comparaisons des outils existants**
 
-## 3.1 **Critères de comparaison**
+## 4.1 **Critères de comparaison**
 
 Nous évaluerons les solutions selon plusieurs critères :
 
@@ -199,7 +201,7 @@ Nous évaluerons les solutions selon plusieurs critères :
 - Tarification
 - Public cible
 
-## 3.2 **Comparatif des solutions populaires**
+## 4.2 **Comparatif des solutions populaires**
 
 | Outil	| Facilité d’utilisation (1 à 5) | Fonctionnalités principales | Personnalisation | Intégrations | Tarification | Public cible |
 |-------|------------------------|-----------------------------|------------------|--------------|--------------|--------------|
@@ -213,9 +215,9 @@ Nous évaluerons les solutions selon plusieurs critères :
 |ServiceNow ITSM	|5	|ITSM complet, IA, automatisation avancée	|Très élevée|	Microsoft, AWS, API REST	| très cher |	Grandes entreprises, ITIL
 
 
-## 3.3 **Détails des outils les plus populaires**
+## 4.3 **Détails des outils les plus populaires**
 
-### 3.3.1 Jira Service Management
+### 4.3.1 Jira Service Management
 Avantages :
 - Puissant pour les grandes équipes IT (ITIL, SLA).
 - Intégration native avec l’écosystème Atlassian.
@@ -223,7 +225,7 @@ Avantages :
 Inconvénients :
 - Courbe d’apprentissage.
 - Payant.
-### 3.3.2 Zendesk Support
+### 4.3.2 Zendesk Support
 Avantages :
 - Interface moderne et intuitive.
 - Support multi-canal performant (email, chat, téléphone).
@@ -231,7 +233,7 @@ Avantages :
 Inconvénients :
 - Coût élevé pour les entreprises en croissance.
 - Personnalisation limitée comparée à Jira.
-### 3.3.3 Freshservice
+### 4.3.3 Freshservice
 Avantages :
 - Spécialisé pour l’IT et la gestion des incidents.
 - Interface simple.
@@ -239,7 +241,7 @@ Avantages :
 Inconvénients :
 - Moins d’intégrations natives que Zendesk/Jira.
 - Payant.
-### 3.3.4 GLPI (Open-source)
+### 4.3.4 GLPI (Open-source)
 Avantages :
 - Gratuit et open-source.
 - Gestion complète des tickets et du parc informatique.
@@ -247,7 +249,7 @@ Avantages :
 Inconvénients :
 - Interface vieillissante.
 - Configuration plus complexe qu’une solution cloud.
-### 3.3.5 OTRS
+### 4.3.5 OTRS
 Avantages :
 - Open-source, flexible et personnalisable.
 - Fonctionnalités ITSM avancées.
@@ -256,7 +258,7 @@ Inconvénients :
 - Interface technique.
 - Maintenance et mise à jour à gérer soi-même.
 
-## 3.4 Recommandations selon l’usage
+## 4.4 Recommandations selon l’usage
 
 | Besoin | Solution recommandée |
 |--------|----------------------|
@@ -266,13 +268,13 @@ Inconvénients :
 | Développeurs (suivi des bugs)	| Mantis Bug Tracker|
 
 
-# 4 **Définition des cas d’utilisation**
+# 5 **Définition des cas d’utilisation**
 
-# 5 **Exigences fonctionnelles et non fonctionnelles**
+# 6 **Exigences fonctionnelles et non fonctionnelles**
 
-# 6 **Modèle conceptuel de données**
+# 7 **Modèle conceptuel de données**
 
-# Structure du projet
+# 8 **Structure du projet**
 
 ```plaintext
 

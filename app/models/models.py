@@ -11,7 +11,7 @@ class User(Base):
 
     user_id = Column(Integer, primary_key=True)
     username = Column(String(50), nullable=False)
-    password = Column(String(255), nullable=False)
+    Hashpassword = Column(String(255), nullable=False)
     email = Column(String(100), nullable=False, unique=True)
     role = Column(Enum('user', 'technician', 'admin'), nullable=False)
     phone_number = Column(String(15), nullable=False)

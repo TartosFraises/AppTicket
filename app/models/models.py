@@ -1,19 +1,17 @@
-from sqlalchemy import Column, Integer, String
+# coding: utf-8
+from sqlalchemy import Column, Enum, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
+metadata = Base.metadata
+
 
 class User(Base):
-    """
-    Représente un utilisateur dans la base de données.
+    __tablename__ = 'Users'
 
-    Attributes:
-        __tablename__ (str): Nom de la table associée dans la base de données.
-        id (int): Identifiant unique de l'utilisateur.
-        nom (str): Nom unique de l'utilisateur.
-        email (str): Adresse e-mail de l'utilisateur.
-    """
-    __tablename__ = 'User'
-    id = Column(Integer, primary_key=True)  # ID unique
-    nom = Column(String(255), unique=True, nullable=False)  # Nom unique
-    email = Column(String(255), nullable=False)  # Email obligatoire
+    user_id = Column(Integer, primary_key=True)
+    username = Column(String(50), nullable=False)
+    password = Column(String(255), nullable=False)
+    email = Column(String(100), nullable=False, unique=True)
+    role = Column(Enum('user', 'technician', 'admin'), nullable=False)
+    phone_number = Column(String(15), nullable=False)

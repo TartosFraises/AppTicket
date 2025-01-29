@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from models import Base, User
+from app.models import Base, User
+import bcrypt
 
 class MySqlConnector:
     """
@@ -32,33 +33,51 @@ class MySqlConnector:
         self.session.close()
         print("Connexion fermée.")
 
-    def userExist(self, user_name: str) -> bool:
+    def userExist(self, username: str) -> bool:
         """
-        Vérifie si un utilisateur existe dans la table User.
+        Vérifie si un utilisateur existe dans la table Users.
 
         Args:
-            user_name (str): Nom de l'utilisateur.
+            username (str): Nom de l'utilisateur.
 
         Returns:
             bool: True si l'utilisateur existe, False sinon.
         """
-        return self.session.query(User).filter_by(nom=user_name).first() is not None
+        return self.session.query(User).filter_by(username=username).first() is not None
 
-    def addUser(self, user_name: str, email: str):
+    def get_user_hash(self, username: str) -> str:
         """
-        Ajoute un utilisateur dans la table User.
+        Récupère le hash du mot de passe d'un utilisateur.
 
         Args:
-            user_name (str): Nom de l'utilisateur.
-            email (str): Adresse email.
-        """
-        # Vérifie si l'utilisateur existe déjà
-        if self.userExist(user_name):
-            print(f"L'utilisateur {user_name} existe déjà.")
-            return
+            username (str): Nom de l'utilisateur.
 
-        # Crée un nouvel utilisateur
-        new_user = User(nom=user_name, email=email)
-        self.session.add(new_user)  # Ajoute à la session
-        self.session.commit()  # Sauvegarde dans la base
-        print(f"Utilisateur {user_name} ajouté avec succès.")
+        Returns:
+            str: Hash du mot de passe ou None si l'utilisateur n'existe pas.
+        """
+        user = self.session.query(User).filter_by(username=username).first()
+        return user.password if user else None
+
+    def addUser(self, username: str, password: str, email: str, role: str, phone_number: str):
+        """
+        Ajoute un utilisateur dans la table Users.
+
+        Args:
+            username (str): Nom de l'utilisateur.
+            password (str): Mot de passe à hacher.
+            email (str): Adresse email.
+            role (str): Rôle de l'utilisateur.
+            phone_number (str): Numéro de téléphone.
+        """
+        if self.userExist(username):
+            print(f"L'utilisateur {username} existe déjà.")
+            return False
+
+        # Hachage du mot de passe avant stockage
+        hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
+
+        new_user = User(username=username, password=hashed_password, email=email, role=role, phone_number=phone_number)
+        self.session.add(new_user)
+        self.session.commit()
+        print(f"Utilisateur {username} ajouté avec succès.")
+        return True

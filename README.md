@@ -1,18 +1,18 @@
 
 
-# **Présentation du Projet AppTicket**
+# 1 **Présentation du Projet AppTicket**
 
-## **1. Introduction**
+## **1.1 Introduction**
 
 L'objectif du projet **AppTicket**, réalisé dans le cadre de notre **BTS SIO**, est de concevoir et développer une application web de gestion de tickets d'incidents. Cette application vise à améliorer la gestion des demandes d'assistance et à optimiser le suivi des problèmes rencontrés par les utilisateurs.
 
 Le projet repose sur une architecture **Flask** pour la partie backend,  **SQLAlchemy** et **MySql** pour la gestion des données, et une interface web facilitant l'interaction avec les utilisateurs.
 
-## **2. Recueil des Besoins**
+## **1.2 Recueil des Besoins**
 
 Avant de lancer l'implémentation, nous avons réalisé un **recueil des besoins** afin d'affiner les exigences du projet. Cette phase a permis de mieux comprendre les attentes des futurs utilisateurs et d'adapter l'architecture de l'application en conséquence.
 
-### **Méthodologie employée**
+### **1.2.1 Méthodologie employée**
 
 Nous avons procédé en plusieurs étapes :
 
@@ -21,7 +21,7 @@ Nous avons procédé en plusieurs étapes :
 -   **Benchmarking** des solutions existantes pour identifier les bonnes pratiques.
 -   **Définition des cas d'utilisation** et formalisation des exigences fonctionnelles et non fonctionnelles.
 
-### **Principaux besoins identifiés**
+### **1.2.2 Principaux besoins identifiés**
 
 Suite à cette analyse, nous avons défini les fonctionnalités clés du projet :
 
@@ -33,11 +33,11 @@ Suite à cette analyse, nous avons défini les fonctionnalités clés du projet 
 6.  **Tableau de bord et statistiques** pour suivre la performance du support.
 7.  **API REST** permettant l’intégration avec d’autres systèmes internes.
 
-## **3. Conception et Architecture**
+## **1.3 Conception et Architecture**
 
 Sur la base des besoins recueillis, nous avons conçu une architecture modulaire avec les composants suivants :
 
-### **Architecture technique**
+### **1.3.1 Architecture technique**
 
 -   **Backend (Flask + SQLAlchemy)** : Gère les routes API, la logique métier et l’accès à la base de données.
 -   **Base de données (MySQL)** : Stocke les informations des utilisateurs, tickets, et logs d'activités.
@@ -46,7 +46,7 @@ Sur la base des besoins recueillis, nous avons conçu une architecture modulaire
 -   **Authentification sécurisée** avec gestion des rôles et permissions.
 
 
-## **3. Implémentation et Développements**
+## **1.4 Implémentation et Développements**
 
 -  **Phase 1 : Recueil du besoin** et rédaction du cahier des charge
 -  **Phase 2 : Mise en place de l’architecture** et configuration des bases de données.
@@ -55,9 +55,9 @@ Sur la base des besoins recueillis, nous avons conçu une architecture modulaire
 -   **Phase 5: Mise en production.**
 
 
-# **Résumé des Systèmes de Gestion des Incidents et des Demandes de Maintenance**
+# 2 **Résumé des Systèmes de Gestion des Incidents et des Demandes de Maintenance**
 
-## **Actuel : Signalement des incidents et outils utilisés**
+## **2.1 Actuel : Signalement des incidents et outils utilisés**
 - **Moyens de signalement** : GLPI, appels téléphoniques, tickets, JIRA, Teams.
 - **Outils/canaux en place** : GLPI, mails, Office 365 (Teams, Outlook), Slack, Zoom, Google Workspace.
 - **Problèmes majeurs** :
@@ -65,7 +65,7 @@ Sur la base des besoins recueillis, nous avons conçu une architecture modulaire
   - Logs incomplets, difficulté d'assigner un ticket à plusieurs personnes.
   - Multiplicité des systèmes pour les demandes hors ticketing.
 
-## **Volumes et Périodes**
+## **2.2 Volumes et Périodes**
 - **Incidents traités/semaine** :
   - 20% traitent 1 à 2 incidents.
   - 30% gèrent 5 à 10 incidents.
@@ -77,7 +77,7 @@ Sur la base des besoins recueillis, nous avons conçu une architecture modulaire
 
 ---
 
-## **Attentes pour une nouvelle application**
+## **2.3 Attentes pour une nouvelle application**
 1. **Simplicité d’utilisation** (employés et techniciens).
 2. **Fonctionnalités clés** :
    - Suivi détaillé (nouveau, en cours, clos...).
@@ -94,7 +94,7 @@ Sur la base des besoins recueillis, nous avons conçu une architecture modulaire
 
 ---
 
-## **Préférences utilisateurs**
+## **2.4 Préférences utilisateurs**
 - **Signalement** : Formulaires en ligne, téléphone avec alertes directes.
 - **Suivi des tickets** :
   - Notifications par email/SMS.
@@ -105,7 +105,7 @@ Sur la base des besoins recueillis, nous avons conçu une architecture modulaire
 
 ---
 
-## **Préférences techniciens**
+## **2.5 Préférences techniciens**
 - **Réception des tickets** : Mail (listes de diffusion), dashboard, bots Slack.
 - **Catégorisation** :
   - Type (matériel/logiciel), priorité, état actuel.
@@ -117,7 +117,7 @@ Sur la base des besoins recueillis, nous avons conçu une architecture modulaire
 
 ---
 
-## **Besoins responsables**
+## **2.6 Besoins responsables**
 - **Rapports souhaités** :
   - Tickets par service, temps moyen de résolution, problèmes récurrents.
   - Fréquence : hebdomadaire (lundi 10h) ou mensuelle.

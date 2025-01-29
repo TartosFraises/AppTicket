@@ -1,4 +1,61 @@
-# Résumé des Systèmes de Gestion des Incidents et des Demandes de Maintenance
+
+
+# **Présentation du Projet AppTicket**
+
+## **1. Introduction**
+
+L'objectif du projet **AppTicket**, réalisé dans le cadre de notre **BTS SIO**, est de concevoir et développer une application web de gestion de tickets d'incidents. Cette application vise à améliorer la gestion des demandes d'assistance et à optimiser le suivi des problèmes rencontrés par les utilisateurs.
+
+Le projet repose sur une architecture **Flask** pour la partie backend,  **SQLAlchemy** et **MySql** pour la gestion des données, et une interface web facilitant l'interaction avec les utilisateurs.
+
+## **2. Recueil des Besoins**
+
+Avant de lancer l'implémentation, nous avons réalisé un **recueil des besoins** afin d'affiner les exigences du projet. Cette phase a permis de mieux comprendre les attentes des futurs utilisateurs et d'adapter l'architecture de l'application en conséquence.
+
+### **Méthodologie employée**
+
+Nous avons procédé en plusieurs étapes :
+
+-   **Questionnaire en ligne envoyé à des professionnels du secteur** pour identifier les besoins et attentes.
+-   **Analyse des processus existants** afin d’identifier les améliorations possibles.
+-   **Benchmarking** des solutions existantes pour identifier les bonnes pratiques.
+-   **Définition des cas d'utilisation** et formalisation des exigences fonctionnelles et non fonctionnelles.
+
+### **Principaux besoins identifiés**
+
+Suite à cette analyse, nous avons défini les fonctionnalités clés du projet :
+
+1.  **Création et gestion des tickets** avec des statuts clairs (ouvert, en cours, résolu, fermé).
+2.  **Authentification et gestion des utilisateurs** avec des rôles distincts (utilisateur, support, administrateur).
+3.  **Système de notifications** (email/SMS) pour informer les utilisateurs des mises à jour sur leurs tickets.
+4.  **Gestion des priorités et assignation des tickets** aux membres du support.
+5.  **Historique et traçabilité** des interventions sur chaque ticket.
+6.  **Tableau de bord et statistiques** pour suivre la performance du support.
+7.  **API REST** permettant l’intégration avec d’autres systèmes internes.
+
+## **3. Conception et Architecture**
+
+Sur la base des besoins recueillis, nous avons conçu une architecture modulaire avec les composants suivants :
+
+### **Architecture technique**
+
+-   **Backend (Flask + SQLAlchemy)** : Gère les routes API, la logique métier et l’accès à la base de données.
+-   **Base de données (MySQL)** : Stocke les informations des utilisateurs, tickets, et logs d'activités.
+-   **Frontend (HTML/CSS/JS)** : Fournit une interface utilisateur intuitive et ergonomique.
+-   **Système de notification (SMTP/SMS)** : Permet d’envoyer des alertes en fonction des actions des utilisateurs.
+-   **Authentification sécurisée** avec gestion des rôles et permissions.
+
+
+## **3. Implémentation et Développements**
+
+-  **Phase 1 : Recueil du besoin** et rédaction du cahier des charge
+-  **Phase 2 : Mise en place de l’architecture** et configuration des bases de données.
+-   **Phase 3 : Développement des fonctionnalités principales** (gestion des tickets, authentification, notifications).
+-   **Phase 4 : Tests unitaires et intégration** pour valider la stabilité de l’application.
+-   **Phase 5: Mise en production.**
+
+
+# **Résumé des Systèmes de Gestion des Incidents et des Demandes de Maintenance**
 
 ## **Actuel : Signalement des incidents et outils utilisés**
 - **Moyens de signalement** : GLPI, appels téléphoniques, tickets, JIRA, Teams.

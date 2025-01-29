@@ -11,12 +11,12 @@ class MySqlConnector:
     def add_user(self, username, password, email, role, phone_number):
         session = self.Session()
         if session.query(User).filter_by(username=username).first():
-            return "Utilisateur déjà existant."
+            return "False"
         user = User(username=username, password=password, email=email, role=role, phone_number=phone_number)
         session.add(user)
         session.commit()
         session.close()
-        return "Utilisateur ajouté avec succès."
+        return "True"
 
     def get_users(self):
         session = self.Session()

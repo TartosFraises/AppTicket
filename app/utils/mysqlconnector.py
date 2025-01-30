@@ -59,7 +59,7 @@ class MySqlConnector:
             str: Hash du mot de passe ou None si l'utilisateur n'existe pas.
         """
         user = self.session.query(User).filter_by(username=username).first()
-        return user.password if user else None
+        return user.hashpassword if user else None  # Correction ici (hashpassword au lieu de password)
 
     def addUser(self, username: str, hashed_password: str, email: str, role: str, phone_number: str):
         """
@@ -76,8 +76,14 @@ class MySqlConnector:
             logging.warning(f"L'utilisateur {username} existe déjà.")
             return False
 
-        new_user = User(username=username, password=hashed_password, email=email, role=role, phone_number=phone_number)
-        self.session.add(new_user)
-        self.session.commit()
-        logging.info(f"Utilisateur {username} ajouté avec succès.")
-        return True
+        new_user = User(username=username, hashpassword=hashed_password, email=email, role=role, phone_number=phone_number)
+        
+        try:
+            self.session.add(new_user)
+            self.session.commit()
+            logging.info(f"Utilisateur {username} ajouté avec succès.")
+            return True
+        except Exception as e:
+            self.session.rollback()  # Évite une transaction bloquée en cas d'erreur
+            logging.error(f"Erreur lors de l'ajout de l'utilisateur {username}: {e}")
+            return False

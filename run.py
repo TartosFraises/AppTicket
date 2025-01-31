@@ -4,8 +4,8 @@ from flask_login import LoginManager, UserMixin, login_user, logout_user, login_
 from app.routes.user import User
 from app.routes.base import base_route
 
-app = Flask(__name__, template_folder='app/templates')
-app.secret_key = 'appticket secret key'
+app = Flask(__name__, template_folder='app/templates', static_folder='app/static')
+app.secret_key = 'appticket_secret_key'
 
 
 login_manager = LoginManager()

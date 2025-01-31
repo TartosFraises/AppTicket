@@ -4,32 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppTicket: Connexion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
 </head>
 <body>
-    <h2>Connexion</h2>
-    {% if error %}
-        <p style="color: red;">{{ error }}</p>
-    {% endif %}
-    <form id="password-form" method="post">
-        <label for="username">Nom d'utilisateur:</label>
-        <input type="text" name="username" required><br>
+    <div class="container">
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
         
-        <label for="password">Mot de passe:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <input type="submit" value="Se connecter">
-    </form>
+        <div class="login-box">
+            <h1 class="app-title">AppTicket</h1>
+            
+            <form id="password-form" method="post">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur:</label>
+                    <input type="text" name="username" required><br>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                </div>
+                
+                <input type="submit" value="Se connecter">
+            </form>
+        </div>
+    </div>
 
-       <script>
-        // Assurez-vous que CryptoJS est bien chargé
+    <script>
+        // CryptoJS est bien chargé
         if (typeof CryptoJS === "undefined") {
             console.error("CryptoJS n'a pas pu être chargé.");
         } else {
             console.log("CryptoJS chargé avec succès.");
         }
 
-        // Assurez-vous que le DOM est bien chargé avant d'ajouter l'événement
         document.addEventListener("DOMContentLoaded", function() {
             // Fonction pour calculer le hash du mot de passe
             document.getElementById("password-form").addEventListener("submit", function(event) {

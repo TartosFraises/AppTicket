@@ -3,21 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
+    <title>AppTicket: Connexion</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
 </head>
 <body>
     <h2>Connexion</h2>
     {% if error %}
         <p style="color: red;">{{ error }}</p>
     {% endif %}
-    <form method="post">
+    <form id="password-form" method="post">
         <label for="username">Nom d'utilisateur:</label>
         <input type="text" name="username" required><br>
         
         <label for="password">Mot de passe:</label>
-        <input type="password" name="password" required><br>
+        <input type="password" id="password" name="password" required><br><br>
         
         <input type="submit" value="Se connecter">
     </form>
+
+       <script>
+        // Assurez-vous que CryptoJS est bien chargé
+        if (typeof CryptoJS === "undefined") {
+            console.error("CryptoJS n'a pas pu être chargé.");
+        } else {
+            console.log("CryptoJS chargé avec succès.");
+        }
+
+        // Assurez-vous que le DOM est bien chargé avant d'ajouter l'événement
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fonction pour calculer le hash du mot de passe
+            document.getElementById("password-form").addEventListener("submit", function(event) {
+                // Empêche la soumission du formulaire par défaut
+                event.preventDefault();
+
+                const password = document.getElementById("password").value;
+                
+                // Vérifie si un mot de passe est fourni
+                if (!password) {
+                    alert("Le mot de passe ne peut pas être vide.");
+                    return;
+                }
+
+                // Calcul du hash SHA-256 du mot de passe
+                const hash = CryptoJS.SHA256(password).toString(CryptoJS.enc.Base64);
+                console.log("Hash du mot de passe : ", hash);
+
+                // Crée un champ caché pour envoyer le hash
+                const hashInput = document.createElement("input");
+                hashInput.type = "hidden";
+                hashInput.name = "password_hash";
+                hashInput.value = hash;
+
+                // Ajoute le champ caché au formulaire
+                document.getElementById("password-form").appendChild(hashInput);
+
+                // Vide le champ de mot de passe avant de soumettre pour éviter qu'il ne soit envoyé
+                document.getElementById("password").value = "";
+
+                // Soumet le formulaire avec le hash
+                this.submit();
+            });
+        });
+    </script>
 </body>
 </html>

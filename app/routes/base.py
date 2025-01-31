@@ -18,13 +18,13 @@ def home():
 def login():
     if request.method == 'POST':
         username = request.form['username']
-        password = request.form['password']
+        password = request.form['password_hash']
         
         print(f"{username} {password}")
-        if username == "toto" and password== "titi":
+        if username == "toto" and password== "MfemXjFVhqwZi9eYtmKc5JA9CJlHbVdBqfMuLlIbamY=": # toto/toto
             session['username'] = username
-            session['userrole'] = 'user' 
-            #session['userrole'] = 'technician'
+            #session['userrole'] = 'user' 
+            session['userrole'] = 'technician'
             #session['userrole'] = 'admin'
             user = User(username)
             login_user(user)

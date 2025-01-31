@@ -2,3 +2,5 @@ SQLAlchemy==2.0.37
 pymysql==1.1.1
 bcrypt==4.0.1
 pytest
+Flask
+flask_login

@@ -9,13 +9,13 @@
 </head>
 <body>
     <div class="container">
-        {% if error %}
-            <p style="color: red;">{{ error }}</p>
-        {% endif %}
-        
+       
         <div class="login-box">
             <h1 class="app-title">AppTicket</h1>
-            
+             {% if error %}
+				<p style="color: red;">{{ error }}</p>
+			{% endif %}
+        
             <form id="password-form" method="post">
                 <div class="form-group">
                     <label for="username">Nom d'utilisateur:</label>

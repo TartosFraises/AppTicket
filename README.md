@@ -109,7 +109,8 @@ gantt
 # 2 **Questionnaire en ligne auprès des professionnels**
 
 [Quesitonnaire version PDF](docs/CollecteInformationsBTS-SIO.pdf)
-[Questionnaire en ligne](https://forms.gle/usFrgu5Hq5fD4uCE9)
+
+[Questionnaire version en ligne](https://forms.gle/usFrgu5Hq5fD4uCE9)
 
 # 3 **Analyse des réponses et identification des fonctionnalités**
 

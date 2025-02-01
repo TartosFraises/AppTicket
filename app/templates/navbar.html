@@ -1,15 +1,11 @@
 <nav class="navbar">
     <div class="nav-left">
-        <span class="logo">AppTicket</span>
+		 <a href="/"><img src="{{ url_for('static', filename='images/appticket.jpg') }}" alt="AppTicket" class="logo"></a>
     </div>
-		 <div class="user-info">
-			<span class="username">{{ username }}</span> 
-			<span class="role">{{ userrole }}</span>  
-		</div>
 	
 	<nav>
 		<ul>
-			<li><a href="/"><i class="fas fa-home"></i></a></li>
+			<li><a href="/about"><i class="fas fa-info-circle"></i></a></li>
 			<li><a href="/update_user"><i class="fas fa-cogs"></i></a></li>
 			<li><a href="/logout"><i class="fas fa-sign-out-alt"></i></a></li>
 		</ul>

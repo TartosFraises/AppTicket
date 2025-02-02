@@ -271,6 +271,9 @@ Inconvénients :
 
 # 5 **Définition des cas d’utilisation**
 
+![image](https://github.com/user-attachments/assets/a848e845-ed98-42de-a64d-1462e45b6e50)
+
+
 # 6 **Exigences fonctionnelles et non fonctionnelles**
 
 # 7 **Modèle conceptuel de données**

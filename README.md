@@ -188,7 +188,11 @@ TODO:  Ajouter ici la présentation de l'analyse des résultats
 - **Sauvegardes** :
   - Sauvegarde quotidienne/hebdomadaire (tickets, logs, base de connaissances).
   - Continuité de service pendant les heures de travail.
- 
+
+## 3.9 **Bilan**
+
+TODO: il faut mettre ici le bilan du questionnaire et expliquer quelles nouvelles exigences sont ajoutées dans l'application
+
 # 4 **Comparaisons des outils existants**
 
 ## 4.1 **Critères de comparaison**
@@ -271,10 +275,51 @@ Inconvénients :
 
 # 5 **Définition des cas d’utilisation**
 
+## 5.1 **Introduction**
+
+TODO: Faire une introduction 
+
+## 5.2 **Schéma**
+
 ![image](https://github.com/user-attachments/assets/a848e845-ed98-42de-a64d-1462e45b6e50)
 
+## 5.3 **Cas d'utilisation**
+
+### 5.3.1 Authentification
+
+Utilisateur: Tous  
+- Peut se connecter, accéder à la page d'accueil et se déconnecter.  
+
+### 1 - Cas d'utilisation  
+- L'utilisateur entre son nom d'utilisateur et son mot de passe (haché côté client).  
+- Le système vérifie les identifiants.  
+- Si corrects, l'utilisateur est authentifié et redirigé vers la page d'accueil.  
+
+### 2 - Accéder à la page d'accueil  
+- Un utilisateur authentifié peut accéder à la page d'accueil.  
+- Si non authentifié, il est redirigé vers la page de connexion.  
+
+### 3 - Déconnexion  
+- L'utilisateur clique sur **"Se déconnecter"**.  
+- Le système supprime la session et redirige vers la page de connexion.  
+
+### 5.3.2 TODO: Faire ce travail sur tous les use case
 
 # 6 **Exigences fonctionnelles et non fonctionnelles**
+
+## 6.1 **Description**
+
+- ID : Identifiant unique de l’exigence (F = Fonctionnelle, NF = Non fonctionnelle).
+- Exigence : Nom de l’exigence.
+- Description : Explication détaillée de l’exigence.
+- Priorité : Niveau d'importance (Haute, Moyenne, Basse).
+
+## 6.2 **Exigences**
+
+ ID         | Exigence                 | Description | Priorité |
+|-----------|-------------------------|-------------|----------|
+| F-001     | Authentification         | L'utilisateur doit pouvoir se connecter avec un identifiant et un mot de passe. | Haute |
+| NF-001    | Compatibilité            | Fonctionne sur les navigateurs récents (Chrome, Firefox, Edge). | Moyenne |
 
 # 7 **Modèle conceptuel de données**
 

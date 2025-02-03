@@ -281,7 +281,7 @@ TODO: Faire une introduction
 
 ## 5.2 **Schéma**
 
-![image](https://github.com/user-attachments/assets/a848e845-ed98-42de-a64d-1462e45b6e50)
+![image](https://github.com/user-attachments/assets/968991ed-ec15-447d-aaf8-aee0152823cf)
 
 ## 5.3 **Cas d'utilisation**
 

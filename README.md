@@ -285,15 +285,15 @@ TODO: Faire une introduction
 
 ## 5.3 **Cas d'utilisation**
 
-## 5.3.1 Créer un ticket
+### 5.3.1 Créer un ticket
 
 Utilisateur : Tous
 
-### 1 - Accéder à la page de création de ticket**
+#### 1 - Accéder à la page de création de ticket**
 
 - L'utilisateur peut accéder à l'option créer un ticket via le menu principal "mes tickets".
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - Saisir les informations du ticket : titre du ticket, description du problème, priorité du ticket.
 - Valider la création : cliquer sur soumettre le ticket.
@@ -302,41 +302,41 @@ Utilisateur : Tous
 
 ---
 
-## 5.3.2 Voir tous les tickets
+### 5.3.2 Voir tous les tickets
 
 Utilisateurs : admin, technicien
 
-### 1 - Accéder à la page "Tous les tickets"
+#### 1 - Accéder à la page "Tous les tickets"
 
 - Les utilisateurs admin et technicien disposent d'une section "tous les tickets" accessible depuis leur menu principal.
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - Parcourir la liste complète des tickets pour obtenir des informations détaillées.
 - Supprimer des tickets 
 
 ---
 
-## 5.3.3 Consulter un ticket
+### 5.3.3 Consulter un ticket
 
 Utilisateur: admin, technicien, utilisateur
 
-### 1 - Accéder à un ticket
+#### 1 - Accéder à un ticket
 
 - Un utilisateur admin et technicien via la page "tous les tickets" peut consulter le détail d'un ticket.
 - Un utilisateur simple via la page "mes tickets" peut consulter le détail de son ticket.
 
 ---
 
-## 5.3.4 Ajouter un commentaire à un ticket
+### 5.3.4 Ajouter un commentaire à un ticket
 
 Utilisateur : admin, technicien, utilisateur
 
-### 1 - Accéder à la page de détail du ticket
+#### 1 - Accéder à la page de détail du ticket
 
 - Un utilisateur peut ouvrir la fiche détaillée d'un ticket depuis les sections "tous les tickets" ou "mes tickets".
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - Saisir un commentaire dans la zone dédiée.
 - Confirmer l'ajout du commentaire en cliquant sur "ajouter un commentaire".
@@ -345,16 +345,16 @@ Utilisateur : admin, technicien, utilisateur
 
 ---
 
-## 5.3.5 Prendre en charge un ticket
+### 5.3.5 Prendre en charge un ticket
 
 Utilisateur : technicien
 
-### 1 - Accéder à la liste des tickets
+#### 1 - Accéder à la liste des tickets
 
 - Le technicien sélectionne un ticket depuis la section "tous les tickets" ou via une recherche spécifique.
 - Une option "prendre en charge" est disponible sur chaque ticket non assigné.
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - Cliquer sur prendre en charge pour s'auto-assigner le ticket.
 - Le ticket est mis à jour avec l'état en cours et le nom du Technicien associé.
@@ -363,26 +363,26 @@ Utilisateur : technicien
 
 ---
 
-## 5.3.6 Assigner un ticket
+### 5.3.6 Assigner un ticket
 
 Utilisateur : Admin
 
-### 1 - Cas d'utilisation
+#### 1 - Cas d'utilisation
 
 - L'admin sélectionne un ticket depuis la liste.
 - Une fois dans le détail du ticket, il peut assigner le ticket à un utilisateur spécifique.
 
 ---
 
-## 5.3.7 Modifier un ticket
+### 5.3.7 Modifier un ticket
 
 Utilisateur : admin, technicien
 
-### 1 - Accéder à la modification d'un ticket
+#### 1 - Accéder à la modification d'un ticket
 
 - L'admin ou le technicien sélectionne un ticket depuis la liste des tickets pour ouvrir sa fiche détaillée.
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - Modifier le titre du ticket.
 - Mettre à jour la description du problème.
@@ -390,126 +390,126 @@ Utilisateur : admin, technicien
 
 ---
 
-## 5.3.8 Clôturer un ticket
+### 5.3.8 Clôturer un ticket
 
 Utilisateur : admin, technicien
 
-### 1 - Accéder à la clôture d'un ticket
+#### 1 - Accéder à la clôture d'un ticket
 
 - Une fois un ticket traité, l'admin ou le technicien peut sélectionner l'option "clôturer le ticket".
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - Le système enregistre l'état du ticket comme clôturé et empêche toute nouvelle modification.
 - Une notification peut être envoyée à l'utilisateur concerné pour l'informer de la résolution du ticket.
 
 ---
 
-## 5.3.9 Consulter les tickets supprimés
+### 5.3.9 Consulter les tickets supprimés
 
 Utilisateur : admin
 
-### 1 - Accéder aux tickets supprimés
+#### 1 - Accéder aux tickets supprimés
 
 - L'admin peut accéder à une section spécifique tickets supprimés via le menu principal.
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - Visualiser les tickets récemment supprimés avec leurs détails.
 
 ---
 
-## 5.3.10 Gérer ou modifier un utilisateur
+### 5.3.10 Gérer ou modifier un utilisateur
 
 Utilisateur : Admin
 
-### 1 - Accéder à la page de gestion des utilisateurs
+#### 1 - Accéder à la page de gestion des utilisateurs
 
 - L'utilisateur connecté avec le rôle admin dispose d'une section "gestion des utilisateurs" accessible depuis son menu principal.
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - L'admin peut créer de nouveaux comptes ou retirer des comptes existants.
 - Il peut aussi attribuer l'un des rôles suivants : admin, technicien, ou utilisateur.
 
 ---
 
-## 5.3.11 Changer le mot de passe
+### 5.3.11 Changer le mot de passe
 
 Utilisateur : admin
 
-### 1 - Accéder à la page de changement de mot de passe
+#### 1 - Accéder à la page de changement de mot de passe
 
 - L'admin peut accéder à l'option changer mon mot de passe depuis le profil d'un utilisateur.
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - Changer le mot de passe de l'utilisateur.
 - Une notification peut être envoyée par email après un changement de mot de passe réussi.
 
 ---
 
-## 5.3.12 Voir les statistiques
+### 5.3.12 Voir les statistiques
 
 Utilisateurs : admin, technicien
 
-### 1 - Accéder à la page de statistiques
+#### 1 - Accéder à la page de statistiques
 
 - Les utilisateurs ayant le rôle admin ou technicien disposent d'une section statistiques accessible depuis leur menu principal.
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - Consulter les statistiques des tickets pour obtenir une vue d'ensemble des performances et des tendances.
 
 ---
 
-## 5.3.13 Gérer les notifications
+### 5.3.13 Gérer les notifications
 
 Utilisateur : admin
 
-### 1 - Accéder à la gestion des notifications
+#### 1 - Accéder à la gestion des notifications
 
 - L'admin peut accéder à une section notifications via le profil de l'utilisateur.
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - Activer ou désactiver les notifications par email ou SMS pour un utilisateur.
 
 ---
 
-## 5.3.14 Poser une question à l'IA
+### 5.3.14 Poser une question à l'IA
 
 Utilisateur : Tous
 
-### 1 - Accéder à l'interface de l'IA
+#### 1 - Accéder à l'interface de l'IA
 
 - L'utilisateur peut accéder à une Assistance IA via le menu principal.
 
-### 2 - Cas d'utilisation
+#### 2 - Cas d'utilisation
 
 - L'utilisateur pose son problème à l'IA.
 - L'IA s'appuie sur la base de connaissances pour répondre à la question.
 
 ---
 
-## 5.3.15 Authentification
+### 5.3.15 Authentification
 
 Utilisateur : admin, technicien, utilisateur
 
 - Peut se connecter, accéder à la page d'accueil et se déconnecter.
 
-### 1 - Cas d'utilisation
+#### 1 - Cas d'utilisation
 
 - L'utilisateur entre son nom d'utilisateur et son mot de passe.
 - Le système vérifie les identifiants.
 - Si corrects, l'utilisateur est authentifié et redirigé vers la page d'accueil.
 
-### 2 - Accéder à la page d'accueil
+#### 2 - Accéder à la page d'accueil
 
 - Un utilisateur authentifié peut accéder à la page d'accueil.
 - Si non authentifié, il est redirigé vers la page de connexion.
 
-### 3 - Déconnexion
+#### 3 - Déconnexion
 
 - L'utilisateur clique sur "Se déconnecter".
 - Le système supprime la session et redirige vers la page de connexion.

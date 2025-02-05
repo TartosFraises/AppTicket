@@ -1,0 +1,18 @@
+<nav class="sidebar">
+    <div class="user-info">
+        <span class="username">{{ username }}</span>
+        <span class="userrole">{{ userrole }}</span>
+    </div>
+
+    <ul>
+	{% if userrole == 'user' %}
+		<li><a href="/tickets"> Mes Tickets</a></li>
+	{% elif userrole == 'technician' %}
+		<li><a href="/assigned_tickets">Tickets Assignés</a></li>
+		<li><a href="/statistics">Statistiques</a></li>
+	{% elif userrole == 'admin' %}
+		<li><a href="/all_tickets">Tous les Tickets</a></li>
+		<li><a href="/config_users"> Gestion des Utilisateurs</a></li>
+	{% endif %}
+    </ul>
+</nav>

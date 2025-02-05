@@ -1,0 +1,9 @@
+SQLAlchemy
+pymysql
+bcrypt
+pytest
+Flask
+flask_login
+Flask-SQLAlchemy
+flask_migrate
+python-dotenv

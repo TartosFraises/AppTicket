@@ -8,7 +8,7 @@ L'objectif du projet **AppTicket**, réalisé dans le cadre de notre **BTS SIO**
 
 Le projet repose sur une architecture **Flask** pour la partie backend,  **SQLAlchemy** et **MySql** pour la gestion des données, et une interface web facilitant l'interaction avec les utilisateurs.
 
-## **1.2 Recueil des Besoins**
+## **1.2 Recueil des besoins**
 
 Avant de lancer l'implémentation, nous avons réalisé un **recueil des besoins** afin d'affiner les exigences du projet. Cette phase a permis de mieux comprendre les attentes des futurs utilisateurs et d'adapter l'architecture de l'application en conséquence.
 
@@ -33,7 +33,7 @@ Suite à cette analyse, nous avons défini les fonctionnalités clés du projet 
 6.  **Tableau de bord et statistiques** pour suivre la performance du support.
 7.  **API REST** permettant l’intégration avec d’autres systèmes internes.
 
-## **1.3 Conception et Architecture**
+## **1.3 Conception et architecture**
 
 Sur la base des besoins recueillis, nous avons conçu une architecture modulaire avec les composants suivants :
 
@@ -46,7 +46,7 @@ Sur la base des besoins recueillis, nous avons conçu une architecture modulaire
 -   **Authentification sécurisée** avec gestion des rôles et permissions.
 
 
-## **1.4 Implémentation et Développements**
+## **1.4 Implémentation et développements**
 
 -  **Phase 1 : Recueil du besoin** et rédaction du cahier des charge
 -  **Phase 2 : Mise en place de l’architecture** et création des bases de données.
@@ -126,7 +126,7 @@ TODO:  Ajouter ici la présentation de l'analyse des résultats
   - Logs incomplets, difficulté d'assigner un ticket à plusieurs personnes.
   - Multiplicité des systèmes pour les demandes hors ticketing.
 
-## **3.3 Volumes et Périodes**
+## **3.3 Volumes et périodes**
 - **Incidents traités/semaine** :
   - 20% traitent 1 à 2 incidents.
   - 30% gèrent 5 à 10 incidents.
@@ -192,8 +192,7 @@ TODO:  Ajouter ici la présentation de l'analyse des résultats
 ## 3.9 **Bilan**
 
 
-
-### 3.9.1 Principes Clés
+### 3.9.1 Principes clés
 - **Facilité de déploiement :**
   - Pas besoin de compétences techniques poussées.
   - Faible coût.
@@ -202,7 +201,7 @@ TODO:  Ajouter ici la présentation de l'analyse des résultats
 - **Faible consommation de ressources.**
 - **Simplicité d'utilisation pour les employés et les techniciens.**
 
-### 3.9.2 Fonctionnalités Clés
+### 3.9.2 Fonctionnalités clés
 - **Suivi des tickets :**
   - Suivi détaillé (nouveau, en cours, clos).
   - Notification par email et SMS.
@@ -218,16 +217,16 @@ TODO:  Ajouter ici la présentation de l'analyse des résultats
   - Rapports spécifiques pour les responsables : tickets par service, temps moyen de résolution, problèmes récurrents.
   - Fréquence des rapports : hebdomadaire (lundi à 10h) et mensuelle.
 
-### 3.9.3 Conformité et Sécurité
+### 3.9.3 Conformité et sécurité
 - **Respect du RGPD et des normes internes.**
 - **Accès aux données :**
   - Utilisateurs standards : uniquement leurs tickets.
   - Responsables : vision globale et accès aux rapports.
 
-### 3.9.4 Compatibilité Matérielle
+### 3.9.4 Compatibilité matérielle
 - Utilisation sur PC, tablettes, et smartphones.
 
-### 3.9.5 Interfaces et Expérience Utilisateur
+### 3.9.5 Interfaces et expérience utilisateur
 - **Pour les techniciens :**
   - Notification par email et dashboard.
   - Accès à une base de connaissances.
@@ -236,7 +235,7 @@ TODO:  Ajouter ici la présentation de l'analyse des résultats
   - Signalement via formulaires en ligne ou par téléphone.
   - Suivi du statut des tickets avec notifications.
 
-### 3.9.6 Infrastructure et Déploiement
+### 3.9.6 Infrastructure et déploiement
 - **Préférences variées pour le déploiement :**
   - Cloud ou serveur local.
 

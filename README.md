@@ -191,7 +191,60 @@ TODO:  Ajouter ici la présentation de l'analyse des résultats
 
 ## 3.9 **Bilan**
 
-TODO: il faut mettre ici le bilan du questionnaire et expliquer quelles nouvelles exigences sont ajoutées dans l'application
+
+
+### 1. Principes Clés
+- **Facilité de déploiement :**
+  - Pas besoin de compétences techniques poussées.
+  - Faible coût.
+  - Déploiement possible via un simple script.
+  - Option de déploiement en mode self-host.
+- **Faible consommation de ressources.**
+- **Simplicité d'utilisation pour les employés et les techniciens.**
+
+### 2. Fonctionnalités Clés
+- **Suivi des tickets :**
+  - Suivi détaillé (nouveau, en cours, clos).
+  - Notification par email et SMS.
+  - Affichage du statut du ticket, délais, et nom du technicien.
+  - Fréquence des notifications : à chaque changement ou toutes les heures si besoin.
+- **Gestion des tickets :**
+  - Catégorisation par type (matériel/logiciel), priorité, et état actuel.
+  - Affectation par service/opérateur avec délais pour acceptation et traitement.
+- **Rapports :**
+  - Graphiques sur les volumes, temps de résolution, et problèmes récurrents.
+  - Rapports hebdomadaires et mensuels.
+  - Indicateurs importants : volume de tickets traités, temps de résolution, nombre de tickets en retard.
+  - Rapports spécifiques pour les responsables : tickets par service, temps moyen de résolution, problèmes récurrents.
+  - Fréquence des rapports : hebdomadaire (lundi à 10h) et mensuelle.
+
+### 3. Conformité et Sécurité
+- **Respect du RGPD et des normes internes.**
+- **Accès aux données :**
+  - Utilisateurs standards : uniquement leurs tickets.
+  - Responsables : vision globale et accès aux rapports.
+
+### 4. Compatibilité Matérielle
+- Utilisation sur PC, tablettes, et smartphones.
+
+### 5. Interfaces et Expérience Utilisateur
+- **Pour les techniciens :**
+  - Notification par email et dashboard.
+  - Accès à une base de connaissances.
+  - Chat utilisateur/technicien.
+- **Pour les utilisateurs finaux :**
+  - Signalement via formulaires en ligne ou par téléphone.
+  - Suivi du statut des tickets avec notifications.
+
+### 6. Infrastructure et Déploiement
+- **Préférences variées pour le déploiement :**
+  - Cloud ou serveur local.
+- **Sauvegardes :**
+  - Sauvegarde quotidienne/hebdomadaire des tickets, logs et base de connaissances.
+- **Continuité de service assurée pendant les heures de travail.**
+
+Ce cadre permet d’orienter le choix et la mise en place d’une solution de gestion des incidents, à la fois fonctionnelle, simple et conforme aux attentes des différentes parties prenantes.
+
 
 # 4 **Comparaisons des outils existants**
 

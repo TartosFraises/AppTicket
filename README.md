@@ -193,7 +193,7 @@ TODO:  Ajouter ici la présentation de l'analyse des résultats
 
 
 
-### 1. Principes Clés
+### 3.9.1 Principes Clés
 - **Facilité de déploiement :**
   - Pas besoin de compétences techniques poussées.
   - Faible coût.
@@ -202,7 +202,7 @@ TODO:  Ajouter ici la présentation de l'analyse des résultats
 - **Faible consommation de ressources.**
 - **Simplicité d'utilisation pour les employés et les techniciens.**
 
-### 2. Fonctionnalités Clés
+### 3.9.2 Fonctionnalités Clés
 - **Suivi des tickets :**
   - Suivi détaillé (nouveau, en cours, clos).
   - Notification par email et SMS.
@@ -218,16 +218,16 @@ TODO:  Ajouter ici la présentation de l'analyse des résultats
   - Rapports spécifiques pour les responsables : tickets par service, temps moyen de résolution, problèmes récurrents.
   - Fréquence des rapports : hebdomadaire (lundi à 10h) et mensuelle.
 
-### 3. Conformité et Sécurité
+### 3.9.3 Conformité et Sécurité
 - **Respect du RGPD et des normes internes.**
 - **Accès aux données :**
   - Utilisateurs standards : uniquement leurs tickets.
   - Responsables : vision globale et accès aux rapports.
 
-### 4. Compatibilité Matérielle
+### 3.9.4 Compatibilité Matérielle
 - Utilisation sur PC, tablettes, et smartphones.
 
-### 5. Interfaces et Expérience Utilisateur
+### 3.9.5 Interfaces et Expérience Utilisateur
 - **Pour les techniciens :**
   - Notification par email et dashboard.
   - Accès à une base de connaissances.
@@ -236,14 +236,9 @@ TODO:  Ajouter ici la présentation de l'analyse des résultats
   - Signalement via formulaires en ligne ou par téléphone.
   - Suivi du statut des tickets avec notifications.
 
-### 6. Infrastructure et Déploiement
+### 3.9.6 Infrastructure et Déploiement
 - **Préférences variées pour le déploiement :**
   - Cloud ou serveur local.
-- **Sauvegardes :**
-  - Sauvegarde quotidienne/hebdomadaire des tickets, logs et base de connaissances.
-- **Continuité de service assurée pendant les heures de travail.**
-
-Ce cadre permet d’orienter le choix et la mise en place d’une solution de gestion des incidents, à la fois fonctionnelle, simple et conforme aux attentes des différentes parties prenantes.
 
 
 # 4 **Comparaisons des outils existants**

@@ -7,6 +7,7 @@ from app.routes.base import base_route
 app = Flask(__name__, template_folder='app/templates', static_folder='app/static')
 app.secret_key = 'appticket_secret_key'
 
+
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = "base_route.login"

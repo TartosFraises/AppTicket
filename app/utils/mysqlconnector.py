@@ -3,16 +3,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from app.models import Base, User
 
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-databaseUser = os.getenv('DB_USER')
-databasePassword = os.getenv('DB_PASSWORD')
-databaseName = os.getenv('DB_NAME')
-databaseUrl = os.getenv('DB_URL')
-
 # Configuration du logger
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
@@ -31,7 +21,7 @@ class MySqlConnector:
             databaseUser (str): Nom d'utilisateur MySQL.
             databasePassword (str): Mot de passe MySQL.
         """
-        self.DATABASE_URL = f"mysql+pymysql://{databaseUser}:{databasePassword}@localhost/{databaseName}"
+        self.DATABASE_URL = f"mysql+pymysql://{databaseUser}:{databasePassword}@{databaseUrl}/{databaseName}"
         self.engine = create_engine(self.DATABASE_URL)  # Connexion à MySQL
         self.Session = sessionmaker(bind=self.engine)  # Session pour interagir avec la base
         self.session = self.Session()

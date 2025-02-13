@@ -1,14 +1,17 @@
 import os
+from os.path import join, dirname
+from app.utils.mysqlconnector import __init__
 from dotenv import load_dotenv
 
-load_dotenv()
 
-class Config:
-    
-    SECRET_KEY = os.getenv('SECRET_KEY', 'default_secret_key')
-    FLASK_APP = os.getenv('FLASK_APP')
-    FLASK_ENV = os.getenv('FLASK_ENV')
-    
-    # Configuration de la base de données
-    SQLALCHEMY_TRACK_MODIFICATIONS = True
-    SQLALCHEMY_DATABASE_URI = os.getenv('DB_URL')
+dotenv_path = join(dirname(__file__), './docker/.env')
+load_dotenv(dotenv_path)
+
+DB_PASSWORD = os.environ.get("DB_PASSWORD")
+DB_USER = os.environ.get("DB_USER")
+DB_NAME = os.environ.get("DB_NAME")
+DB_URL = os.environ.get("DB_URL")
+DB_HOST = os.environ.get("DB_HOST")
+SERVER = os.environ.get("SERVER")
+
+__init__(SERVER, DB_NAME, DB_USER, DB_PASSWORD)

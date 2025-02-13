@@ -7,3 +7,4 @@ flask_login
 Flask-SQLAlchemy
 flask_migrate
 python-dotenv
+mysql-connector-python

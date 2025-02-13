@@ -40,7 +40,7 @@ CREATE TABLE `Users` (
 
 LOCK TABLES `Users` WRITE;
 /*!40000 ALTER TABLE `Users` DISABLE KEYS */;
-INSERT INTO `Users` VALUES (1,'titi','29352a41244860cacb6e5e9a258424537fb54fe5c29f2046633e8d53e12f4f1a','titi.lulu1@gmail.com','user','1234567890'),(2,'tata','6854723dee01a5d11f1a844a75c104f1f42fbe962bb44c555251dbf67e38f5df','tata.Celine2@gmail.com','technician','0987654321'),(3,'toto','045c32e82a1392ac2d141e417ed7cdb95588d1c63f398908a014c1d6ae582610','toto.Roger3@gmail.com','admin','1122334455');
+INSERT INTO `Users` VALUES (1,'admin','MfemXjFVhqwZi9eYtmKc5JA9CJlHbVdBqfMuLlIbamY=','titi.lulu1@gmail.com','user','1234567890'),(2,'tata','6854723dee01a5d11f1a844a75c104f1f42fbe962bb44c555251dbf67e38f5df','tata.Celine2@gmail.com','technician','0987654321'),(3,'toto','045c32e82a1392ac2d141e417ed7cdb95588d1c63f398908a014c1d6ae582610','toto.Roger3@gmail.com','admin','1122334455');
 /*!40000 ALTER TABLE `Users` ENABLE KEYS */;
 UNLOCK TABLES;
 

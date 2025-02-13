@@ -9,6 +9,7 @@ COPY requirements.txt requirements.txt
 COPY app/ app/
 COPY run.py run.py
 COPY config.py config.py
+COPY test.py test.py
 
 # Installe les dépendances
 RUN pip install --no-cache-dir -r requirements.txt
